@@ -1,80 +1,77 @@
-# HTML
+Um projeto moderno em HTML utilizando Tailwind CSS para construir aplicações web responsivas com configuração mínima.
 
-A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.
+🚀 Funcionalidades
 
-## 🚀 Features
+HTML5 - Estrutura moderna em HTML seguindo boas práticas
 
-- **HTML5** - Modern HTML structure with best practices
-- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
-- **Custom Components** - Pre-built component classes for buttons and containers
-- **NPM Scripts** - Easy-to-use commands for development and building
-- **Responsive Design** - Mobile-first approach for all screen sizes
+Tailwind CSS - Framework CSS baseado em utilitários para desenvolvimento rápido de UI
 
-## 📋 Prerequisites
+Componentes Personalizados - Classes de componentes pré-construídas para botões e containers
 
-- Node.js (v12.x or higher)
-- npm or yarn
+NPM Scripts - Comandos fáceis de usar para desenvolvimento e build
 
-## 🛠️ Installation
+Design Responsivo - Abordagem mobile-first para todos os tamanhos de tela
 
-1. Install dependencies:
-```bash
+📋 Pré-requisitos
+
+Node.js (v12.x ou superior)
+
+npm ou yarn
+
+🛠️ Instalação
+
+Instalar dependências:
+
 npm install
-# or
+# ou
 yarn install
-```
 
-2. Start the development server:
-```bash
+
+Iniciar o servidor de desenvolvimento:
+
 npm run dev
-# or
+# ou
 yarn dev
-```
 
-## 📁 Project Structure
-
-```
+📁 Estrutura do Projeto
 html_app/
 ├── css/
-│   ├── tailwind.css   # Tailwind source file with custom utilities
-│   └── main.css       # Compiled CSS (generated)
-├── pages/             # HTML pages
-├── index.html         # Main entry point
-├── package.json       # Project dependencies and scripts
-└── tailwind.config.js # Tailwind CSS configuration
-```
+│   ├── tailwind.css   # Arquivo fonte do Tailwind com utilitários personalizados
+│   └── main.css       # CSS compilado (gerado)
+├── pages/             # Páginas HTML
+├── index.html         # Ponto de entrada principal
+├── package.json       # Dependências e scripts do projeto
+└── tailwind.config.js # Configuração do Tailwind CSS
 
-## 🎨 Styling
+🎨 Estilização
 
-This project uses Tailwind CSS for styling. Custom utility classes include:
+Este projeto utiliza Tailwind CSS para estilização. Classes utilitárias personalizadas incluem:
 
+🧩 Personalização
 
-## 🧩 Customization
+Para personalizar a configuração do Tailwind, edite o arquivo tailwind.config.js:
 
-To customize the Tailwind configuration, edit the `tailwind.config.js` file:
+📦 Build para Produção
 
+Gerar o CSS para produção:
 
-## 📦 Build for Production
-
-Build the CSS for production:
-
-```bash
 npm run build:css
-# or
+# ou
 yarn build:css
-```
 
-## 📱 Responsive Design
+📱 Design Responsivo
 
-The app is built with responsive design using Tailwind CSS breakpoints:
+O app foi construído com design responsivo usando os breakpoints do Tailwind CSS:
 
-- `sm`: 640px and up
-- `md`: 768px and up
-- `lg`: 1024px and up
-- `xl`: 1280px and up
-- `2xl`: 1536px and up
+sm: 640px ou mais
 
-## 🙏 Acknowledgments
+md: 768px ou mais
+
+lg: 1024px ou mais
+
+xl: 1280px ou mais
+
+2xl: 1536px ou mais
 
 - Built with [Rocket.new](https://rocket.new)
 - Powered by HTML and Tailwind CSS
