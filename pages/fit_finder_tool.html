@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encontre Seu Fit Perfeito - PantaStyle</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Descubra sua calça perfeita com nossa ferramenta inteligente de fit. Medidas precisas, recomendações personalizadas e garantia de caimento." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpantastyle6316back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M8 4h16c2.2 0 4 1.8 4 4v16c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4V8c0-2.2 1.8-4 4-4zm2 6v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-primary">PantaStyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Início</a>
+                        <a href="fit_finder_tool.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Encontre Seu Fit</a>
+                        <a href="product_catalog.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Catálogo</a>
+                        <a href="size_guide_fit_education.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Guia de Tamanhos</a>
+                    </div>
+                </div>
+
+                <!-- Cart and Account -->
+                <div class="flex items-center space-x-4">
+                    <a href="shopping_cart_checkout.html" class="text-text-secondary hover:text-primary transition-colors">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9m-9 0h9"/>
+                        </svg>
+                    </a>
+                    <button class="md:hidden text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-primary-800 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <svg class="w-16 h-16 text-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Encontre <span class="text-accent font-accent">Sua Calça Perfeita</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+                Nossa ferramenta inteligente elimina as dúvidas sobre tamanho e fit. 
+                Em poucos minutos, descubra exatamente qual calça é ideal para seu corpo.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div class="flex items-center text-accent">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Garantia de Fit</span>
+                </div>
+                <div class="flex items-center text-accent">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Medidas Brasileiras</span>
+                </div>
+                <div class="flex items-center text-accent">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Recomendações Personalizadas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <div class="bg-white border-b border-border-light sticky top-16 z-40">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-medium text-text-secondary">Progresso</span>
+                <span class="text-sm font-medium text-primary" id="progress-text">Etapa 1 de 4</span>
+            </div>
+            <div class="w-full bg-surface rounded-full h-2">
+                <div class="bg-primary h-2 rounded-full transition-all duration-300" id="progress-bar" style="width: 25%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Step 1: Medidas Corporais -->
+        <div id="step-1" class="step-content">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-primary mb-4">Suas Medidas</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Vamos começar com suas medidas básicas. Use uma fita métrica e siga nossas ilustrações para garantir precisão.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Measurement Form -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Cintura (cm)</label>
+                        <div class="relative">
+                            <input type="number" id="waist" class="input-field pr-12" placeholder="Ex: 70" min="50" max="150" />
+                            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text-secondary">cm</span>
+                        </div>
+                        <p class="text-xs text-text-secondary mt-1">Meça na parte mais estreita da cintura</p>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Quadril (cm)</label>
+                        <div class="relative">
+                            <input type="number" id="hip" class="input-field pr-12" placeholder="Ex: 95" min="60" max="180" />
+                            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text-secondary">cm</span>
+                        </div>
+                        <p class="text-xs text-text-secondary mt-1">Meça na parte mais larga do quadril</p>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Altura (cm)</label>
+                        <div class="relative">
+                            <input type="number" id="height" class="input-field pr-12" placeholder="Ex: 165" min="140" max="200" />
+                            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text-secondary">cm</span>
+                        </div>
+                        <p class="text-xs text-text-secondary mt-1">Sua altura total</p>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Comprimento da Perna (cm)</label>
+                        <div class="relative">
+                            <input type="number" id="inseam" class="input-field pr-12" placeholder="Ex: 75" min="60" max="100" />
+                            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text-secondary">cm</span>
+                        </div>
+                        <p class="text-xs text-text-secondary mt-1">Da virilha até o tornozelo</p>
+                    </div>
+                </div>
+
+                <!-- Measurement Guide -->
+                <div class="bg-surface rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-primary mb-4">Como Medir Corretamente</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <span class="text-accent font-semibold text-sm">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-primary">Cintura</h4>
+                                <p class="text-sm text-text-secondary">Posicione a fita na parte mais estreita, geralmente acima do umbigo</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <span class="text-accent font-semibold text-sm">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-primary">Quadril</h4>
+                                <p class="text-sm text-text-secondary">Meça na parte mais larga, passando pelos glúteos</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <span class="text-accent font-semibold text-sm">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-primary">Comprimento</h4>
+                                <p class="text-sm text-text-secondary">Da virilha até onde você quer que a calça termine</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Measurement Illustration -->
+                    <div class="mt-6 text-center">
+                        <img src="https://images.pexels.com/photos/5710082/pexels-photo-5710082.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Guia de medidas corporais" class="w-full max-w-xs mx-auto rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Preferências de Estilo -->
+        <div id="step-2" class="step-content hidden">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-primary mb-4">Seu Estilo Preferido</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Qual tipo de calça combina mais com seu estilo? Selecione suas preferências.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Skinny -->
+                <div class="style-card cursor-pointer" data-style="skinny">
+                    <div class="card card-hover text-center p-6 transition-all duration-300 border-2 border-transparent hover:border-primary">
+                        <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=200&h=300&fit=crop" alt="Calça Skinny" class="w-full h-40 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <h3 class="font-semibold text-primary mb-2">Skinny</h3>
+                        <p class="text-sm text-text-secondary">Ajustada ao corpo, moderna e versátil</p>
+                    </div>
+                </div>
+
+                <!-- Straight -->
+                <div class="style-card cursor-pointer" data-style="straight">
+                    <div class="card card-hover text-center p-6 transition-all duration-300 border-2 border-transparent hover:border-primary">
+                        <img src="https://images.pexels.com/photos/1598509/pexels-photo-1598509.jpeg?auto=compress&cs=tinysrgb&w=200&h=300&fit=crop" alt="Calça Reta" class="w-full h-40 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <h3 class="font-semibold text-primary mb-2">Reta</h3>
+                        <p class="text-sm text-text-secondary">Clássica e confortável para o dia a dia</p>
+                    </div>
+                </div>
+
+                <!-- Wide Leg -->
+                <div class="style-card cursor-pointer" data-style="wide">
+                    <div class="card card-hover text-center p-6 transition-all duration-300 border-2 border-transparent hover:border-primary">
+                        <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=200&h=300&fit=crop" alt="Calça Wide Leg" class="w-full h-40 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <h3 class="font-semibold text-primary mb-2">Wide Leg</h3>
+                        <p class="text-sm text-text-secondary">Tendência e elegância em movimento</p>
+                    </div>
+                </div>
+
+                <!-- Flare -->
+                <div class="style-card cursor-pointer" data-style="flare">
+                    <div class="card card-hover text-center p-6 transition-all duration-300 border-2 border-transparent hover:border-primary">
+                        <img src="https://images.pexels.com/photos/1598510/pexels-photo-1598510.jpeg?auto=compress&cs=tinysrgb&w=200&h=300&fit=crop" alt="Calça Flare" class="w-full h-40 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <h3 class="font-semibold text-primary mb-2">Flare</h3>
+                        <p class="text-sm text-text-secondary">Retrô chic com toque contemporâneo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rise Preference -->
+            <div class="bg-surface rounded-xl p-6 mb-8">
+                <h3 class="text-lg font-semibold text-primary mb-4">Altura da Cintura</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <label class="rise-option cursor-pointer">
+                        <input type="radio" name="rise" value="low" class="sr-only" />
+                        <div class="card text-center p-4 border-2 border-transparent transition-all duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-medium text-primary">Baixa</h4>
+                            <p class="text-xs text-text-secondary">Cintura baixa, estilo casual</p>
+                        </div>
+                    </label>
+
+                    <label class="rise-option cursor-pointer">
+                        <input type="radio" name="rise" value="mid" class="sr-only" checked />
+                        <div class="card text-center p-4 border-2 border-primary transition-all duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-medium text-primary">Média</h4>
+                            <p class="text-xs text-text-secondary">Equilibrio perfeito</p>
+                        </div>
+                    </label>
+
+                    <label class="rise-option cursor-pointer">
+                        <input type="radio" name="rise" value="high" class="sr-only" />
+                        <div class="card text-center p-4 border-2 border-transparent transition-all duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                                </svg>
+                            </div>
+                            <h4 class="font-medium text-primary">Alta</h4>
+                            <p class="text-xs text-text-secondary">Cintura alta, alonga a silhueta</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: Desafios de Fit -->
+        <div id="step-3" class="step-content hidden">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-primary mb-4">Desafios de Caimento</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Quais são seus principais desafios ao comprar calças? Isso nos ajuda a encontrar o fit perfeito.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Fit Challenges -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-primary mb-4">Selecione seus desafios:</h3>
+                    
+                    <label class="challenge-option flex items-start p-4 border border-border-light rounded-lg cursor-pointer hover:border-primary transition-colors">
+                        <input type="checkbox" class="mt-1 mr-3" value="waist-gap" />
+                        <div>
+                            <h4 class="font-medium text-primary">Folga na cintura</h4>
+                            <p class="text-sm text-text-secondary">A calça fica folgada na cintura quando o quadril está no tamanho certo</p>
+                        </div>
+                    </label>
+
+                    <label class="challenge-option flex items-start p-4 border border-border-light rounded-lg cursor-pointer hover:border-primary transition-colors">
+                        <input type="checkbox" class="mt-1 mr-3" value="thigh-tight" />
+                        <div>
+                            <h4 class="font-medium text-primary">Aperto nas coxas</h4>
+                            <p class="text-sm text-text-secondary">Dificuldade para encontrar calças que não apertem nas coxas</p>
+                        </div>
+                    </label>
+
+                    <label class="challenge-option flex items-start p-4 border border-border-light rounded-lg cursor-pointer hover:border-primary transition-colors">
+                        <input type="checkbox" class="mt-1 mr-3" value="length-issues" />
+                        <div>
+                            <h4 class="font-medium text-primary">Problemas de comprimento</h4>
+                            <p class="text-sm text-text-secondary">Calças sempre muito longas ou muito curtas</p>
+                        </div>
+                    </label>
+
+                    <label class="challenge-option flex items-start p-4 border border-border-light rounded-lg cursor-pointer hover:border-primary transition-colors">
+                        <input type="checkbox" class="mt-1 mr-3" value="hip-fit" />
+                        <div>
+                            <h4 class="font-medium text-primary">Caimento no quadril</h4>
+                            <p class="text-sm text-text-secondary">Dificuldade para encontrar o caimento ideal no quadril</p>
+                        </div>
+                    </label>
+
+                    <label class="challenge-option flex items-start p-4 border border-border-light rounded-lg cursor-pointer hover:border-primary transition-colors">
+                        <input type="checkbox" class="mt-1 mr-3" value="size-inconsistency" />
+                        <div>
+                            <h4 class="font-medium text-primary">Inconsistência de tamanhos</h4>
+                            <p class="text-sm text-text-secondary">Tamanhos diferentes entre marcas e modelos</p>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Body Type Guide -->
+                <div class="bg-surface rounded-xl p-6">
+                    <h3 class="text-lg font-semibold text-primary mb-4">Dicas por Tipo de Corpo</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-white rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">Corpo Ampulheta</h4>
+                            <p class="text-sm text-text-secondary">Cintura definida, quadril e busto proporcionais. Ideal: calças que marquem a cintura.</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">Corpo Pera</h4>
+                            <p class="text-sm text-text-secondary">Quadril mais largo que o busto. Ideal: calças retas ou bootcut que equilibrem a silhueta.</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">Corpo Retângulo</h4>
+                            <p class="text-sm text-text-secondary">Medidas similares. Ideal: calças que criem curvas, como skinny ou com detalhes na cintura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4: Resultados -->
+        <div id="step-4" class="step-content hidden">
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-primary mb-4">Suas Recomendações Personalizadas</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Baseado nas suas medidas e preferências, encontramos as calças perfeitas para você!
+                </p>
+            </div>
+
+            <!-- Size Recommendations -->
+            <div class="bg-gradient-to-r from-success/10 to-success/5 rounded-xl p-6 mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-primary">Seu Tamanho Recomendado</h3>
+                    <div class="flex items-center text-success">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-semibold">95% de Confiança</span>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary mb-1">42</div>
+                        <div class="text-sm text-text-secondary">Tamanho Principal</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary mb-1">40-44</div>
+                        <div class="text-sm text-text-secondary">Faixa Recomendada</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary mb-1">75cm</div>
+                        <div class="text-sm text-text-secondary">Comprimento Ideal</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Recommendations -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- Recommendation 1 -->
+                <div class="card card-hover">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Calça Skinny Premium" class="w-full h-64 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success text-white px-2 py-1 rounded text-xs font-semibold">98% Match</span>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Calça Skinny Premium</h3>
+                    <p class="text-sm text-text-secondary mb-3">Perfeita para seu tipo de corpo. Cintura média, caimento ajustado.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-lg font-bold text-primary">R$ 189,90</span>
+                        <div class="flex items-center text-success text-sm">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Garantia de Fit
+                        </div>
+                    </div>
+                    <a href="product_detail_page.html" class="btn-primary w-full text-center">Ver Produto</a>
+                </div>
+
+                <!-- Recommendation 2 -->
+                <div class="card card-hover">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pexels.com/photos/1598509/pexels-photo-1598509.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Calça Reta Clássica" class="w-full h-64 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success text-white px-2 py-1 rounded text-xs font-semibold">94% Match</span>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Calça Reta Clássica</h3>
+                    <p class="text-sm text-text-secondary mb-3">Versatilidade para todas as ocasiões. Caimento confortável.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-lg font-bold text-primary">R$ 159,90</span>
+                        <div class="flex items-center text-success text-sm">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Garantia de Fit
+                        </div>
+                    </div>
+                    <a href="product_detail_page.html" class="btn-primary w-full text-center">Ver Produto</a>
+                </div>
+
+                <!-- Recommendation 3 -->
+                <div class="card card-hover">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Calça Wide Leg Elegante" class="w-full h-64 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white px-2 py-1 rounded text-xs font-semibold">91% Match</span>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Calça Wide Leg Elegante</h3>
+                    <p class="text-sm text-text-secondary mb-3">Tendência e conforto. Ideal para looks sofisticados.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-lg font-bold text-primary">R$ 229,90</span>
+                        <div class="flex items-center text-success text-sm">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Garantia de Fit
+                        </div>
+                    </div>
+                    <a href="product_detail_page.html" class="btn-primary w-full text-center">Ver Produto</a>
+                </div>
+            </div>
+
+            <!-- Fit Profile Save -->
+            <div class="bg-surface rounded-xl p-6 mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h3 class="text-lg font-semibold text-primary">Salvar Perfil de Fit</h3>
+                        <p class="text-text-secondary">Mantenha suas medidas salvas para compras futuras mais rápidas</p>
+                    </div>
+                    <button class="btn-accent">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3-3m0 0l-3 3m3-3v12"/>
+                        </svg>
+                        Salvar Perfil
+                    </button>
+                </div>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="text-center">
+                <h3 class="text-xl font-semibold text-primary mb-4">Próximos Passos</h3>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="product_catalog.html" class="btn-primary">
+                        Explorar Catálogo Completo
+                    </a>
+                    <a href="size_guide_fit_education.html" class="btn-secondary">
+                        Aprender Mais Sobre Fit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between mt-12 pt-8 border-t border-border-light">
+            <button id="prev-btn" class="btn-secondary hidden">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Voltar
+            </button>
+            <div class="flex-1"></div>
+            <button id="next-btn" class="btn-primary">
+                Continuar
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M8 4h16c2.2 0 4 1.8 4 4v16c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4V8c0-2.2 1.8-4 4-4zm2 6v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">PantaStyle</span>
+                    </div>
+                    <p class="text-white/80 mb-4">Sua personalidade de calça te espera. Especialistas em fit perfeito desde 2015.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-white/80 hover:text-accent transition-colors">Início</a></li>
+                        <li><a href="fit_finder_tool.html" class="text-white/80 hover:text-accent transition-colors">Encontre Seu Fit</a></li>
+                        <li><a href="product_catalog.html" class="text-white/80 hover:text-accent transition-colors">Catálogo</a></li>
+                        <li><a href="size_guide_fit_education.html" class="text-white/80 hover:text-accent transition-colors">Guia de Tamanhos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-4">Suporte</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Central de Ajuda</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Trocas e Devoluções</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Fale Conosco</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Garantia de Fit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li>contato@pantastyle.com.br</li>
+                        <li>(11) 9999-9999</li>
+                        <li>Seg-Sex: 9h às 18h</li>
+                        <li>Sáb: 9h às 14h</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
+                <p>&copy; 2025 PantaStyle. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="fixed bottom-4 left-4 right-4 z-50 md:hidden" id="mobile-cta">
+        <button id="mobile-next-btn" class="btn-primary w-full text-center py-4 shadow-lg">
+            Continuar
+        </button>
+    </div>
+
+    <script>
+        // Fit Finder Tool JavaScript
+        let currentStep = 1;
+        const totalSteps = 4;
+        let selectedStyle = '';
+        let selectedRise = 'mid';
+        let selectedChallenges = [];
+
+        // DOM Elements
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const mobileNextBtn = document.getElementById('mobile-next-btn');
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgress();
+            setupEventListeners();
+        });
+
+        function setupEventListeners() {
+            // Navigation buttons
+            nextBtn.addEventListener('click', nextStep);
+            mobileNextBtn.addEventListener('click', nextStep);
+            prevBtn.addEventListener('click', prevStep);
+
+            // Style selection
+            document.querySelectorAll('.style-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove previous selection
+                    document.querySelectorAll('.style-card .card').forEach(c => {
+                        c.classList.remove('border-primary');
+                        c.classList.add('border-transparent');
+                    });
+                    
+                    // Add selection to clicked card
+                    const cardElement = this.querySelector('.card');
+                    cardElement.classList.add('border-primary');
+                    cardElement.classList.remove('border-transparent');
+                    
+                    selectedStyle = this.dataset.style;
+                });
+            });
+
+            // Rise selection
+            document.querySelectorAll('.rise-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove previous selection
+                    document.querySelectorAll('.rise-option .card').forEach(c => {
+                        c.classList.remove('border-primary');
+                        c.classList.add('border-transparent');
+                    });
+                    
+                    // Add selection to clicked option
+                    const cardElement = this.querySelector('.card');
+                    cardElement.classList.add('border-primary');
+                    cardElement.classList.remove('border-transparent');
+                    
+                    selectedRise = this.querySelector('input').value;
+                });
+            });
+
+            // Challenge selection
+            document.querySelectorAll('.challenge-option input').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const parent = this.closest('.challenge-option');
+                    if (this.checked) {
+                        parent.classList.add('border-primary', 'bg-primary/5');
+                        selectedChallenges.push(this.value);
+                    } else {
+                        parent.classList.remove('border-primary', 'bg-primary/5');
+                        selectedChallenges = selectedChallenges.filter(c => c !== this.value);
+                    }
+                });
+            });
+
+            // Form validation
+            document.querySelectorAll('input[type="number"]').forEach(input => {
+                input.addEventListener('input', validateCurrentStep);
+            });
+        }
+
+        function nextStep() {
+            if (!validateCurrentStep()) {
+                return;
+            }
+
+            if (currentStep < totalSteps) {
+                // Hide current step
+                document.getElementById(`step-${currentStep}`).classList.add('hidden');
+                
+                currentStep++;
+                
+                // Show next step
+                document.getElementById(`step-${currentStep}`).classList.remove('hidden');
+                
+                updateProgress();
+                updateButtons();
+
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                // Generate results if on final step
+                if (currentStep === 4) {
+                    generateResults();
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                // Hide current step
+                document.getElementById(`step-${currentStep}`).classList.add('hidden');
+                
+                currentStep--;
+                
+                // Show previous step
+                document.getElementById(`step-${currentStep}`).classList.remove('hidden');
+                
+                updateProgress();
+                updateButtons();
+
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function updateProgress() {
+            const percentage = (currentStep / totalSteps) * 100;
+            progressBar.style.width = `${percentage}%`;
+            progressText.textContent = `Etapa ${currentStep} de ${totalSteps}`;
+        }
+
+        function updateButtons() {
+            // Previous button
+            if (currentStep === 1) {
+                prevBtn.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+            }
+
+            // Next button
+            if (currentStep === totalSteps) {
+                nextBtn.classList.add('hidden');
+                mobileNextBtn.classList.add('hidden');
+            } else {
+                nextBtn.classList.remove('hidden');
+                mobileNextBtn.classList.remove('hidden');
+                
+                // Update button text based on step
+                const buttonText = currentStep === 3 ? 'Ver Resultados' : 'Continuar';
+                nextBtn.innerHTML = `${buttonText} <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>`;
+                mobileNextBtn.textContent = buttonText;
+            }
+        }
+
+        function validateCurrentStep() {
+            switch (currentStep) {
+                case 1:
+                    const waist = document.getElementById('waist').value;
+                    const hip = document.getElementById('hip').value;
+                    const height = document.getElementById('height').value;
+                    const inseam = document.getElementById('inseam').value;
+                    
+                    if (!waist || !hip || !height || !inseam) {
+                        alert('Por favor, preencha todas as medidas para continuar.');
+                        return false;
+                    }
+                    
+                    if (waist < 50 || waist > 150 || hip < 60 || hip > 180 || height < 140 || height > 200 || inseam < 60 || inseam > 100) {
+                        alert('Por favor, verifique se as medidas estão dentro dos valores esperados.');
+                        return false;
+                    }
+                    break;
+                    
+                case 2:
+                    if (!selectedStyle) {
+                        alert('Por favor, selecione um estilo de calça para continuar.');
+                        return false;
+                    }
+                    break;
+                    
+                case 3:
+                    // Step 3 is optional, so always valid
+                    break;
+            }
+            
+            return true;
+        }
+
+        function generateResults() {
+            // This would typically call an API to generate personalized recommendations
+            // For now, we'll simulate the results based on the collected data
+            
+            const waist = parseInt(document.getElementById('waist').value);
+            const hip = parseInt(document.getElementById('hip').value);
+            const height = parseInt(document.getElementById('height').value);
+            
+            // Simple size calculation (this would be more sophisticated in a real app)
+            let recommendedSize = 38;
+            if (waist <= 70) recommendedSize = 38;
+            else if (waist <= 75) recommendedSize = 40;
+            else if (waist <= 80) recommendedSize = 42;
+            else if (waist <= 85) recommendedSize = 44;
+            else recommendedSize = 46;
+
+            // Update the results display
+            const sizeDisplay = document.querySelector('#step-4 .text-3xl');
+            if (sizeDisplay) {
+                sizeDisplay.textContent = recommendedSize;
+            }
+
+            // Calculate confidence based on how complete the profile is
+            let confidence = 85;
+            if (selectedChallenges.length > 0) confidence += 5;
+            if (selectedStyle) confidence += 5;
+            confidence = Math.min(confidence, 98);
+
+            // Update confidence display
+            const confidenceDisplay = document.querySelector('.text-success .font-semibold');
+            if (confidenceDisplay) {
+                confidenceDisplay.textContent = `${confidence}% de Confiança`;
+            }
+        }
+
+        // Mobile swipe gestures
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const swipeDistance = touchEndX - touchStartX;
+
+            if (Math.abs(swipeDistance) > swipeThreshold) {
+                if (swipeDistance > 0 && currentStep > 1) {
+                    // Swipe right - go to previous step
+                    prevStep();
+                } else if (swipeDistance < 0 && currentStep < totalSteps) {
+                    // Swipe left - go to next step
+                    if (validateCurrentStep()) {
+                        nextStep();
+                    }
+                }
+            }
+        }
+
+        // Camera integration for mobile (placeholder)
+        function openCamera() {
+            // This would integrate with device camera for measurement assistance
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true })
+                    .then(function(stream) {
+                        // Handle camera stream for measurement assistance
+                        console.log('Camera access granted for measurement assistance');
+                    })
+                    .catch(function(error) {
+                        console.log('Camera access denied or not available');
+                    });
+            }
+        }
+
+        // Initialize mobile-specific features
+        if (window.innerWidth <= 768) {
+            // Add camera button for mobile measurement assistance
+            const measurementSection = document.querySelector('#step-1 .space-y-6');
+            if (measurementSection) {
+                const cameraButton = document.createElement('button');
+                cameraButton.className = 'btn-secondary w-full flex items-center justify-center';
+                cameraButton.innerHTML = `
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    Usar Câmera para Ajudar
+                `;
+                cameraButton.addEventListener('click', openCamera);
+                measurementSection.appendChild(cameraButton);
+            }
+        }
+    </script>
+</body>
+</html>

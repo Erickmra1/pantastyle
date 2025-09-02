@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras - PantaStyle</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Finalize sua compra com segurança. Garantia de fit perfeito e múltiplas opções de pagamento brasileiras." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpantastyle6316back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M8 4h16c2.2 0 4 1.8 4 4v16c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4V8c0-2.2 1.8-4 4-4zm2 6v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-primary">PantaStyle</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Início</a>
+                        <a href="fit_finder_tool.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Encontre Seu Fit</a>
+                        <a href="product_catalog.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Catálogo</a>
+                        <a href="size_guide_fit_education.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Guia de Tamanhos</a>
+                    </div>
+                </div>
+
+                <!-- Cart and Account -->
+                <div class="flex items-center space-x-4">
+                    <a href="shopping_cart_checkout.html" class="text-primary font-semibold transition-colors">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9m-9 0h9"/>
+                        </svg>
+                    </a>
+                    <button class="md:hidden text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Checkout Progress -->
+    <section class="bg-surface py-4">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center space-x-4">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold">1</div>
+                    <span class="ml-2 text-sm font-medium text-primary">Carrinho</span>
+                </div>
+                <div class="w-8 h-px bg-border-light"></div>
+                <div class="flex items-center">
+                    <div class="w-8 h-8 bg-border-light text-text-secondary rounded-full flex items-center justify-center text-sm font-semibold">2</div>
+                    <span class="ml-2 text-sm text-text-secondary">Revisão de Fit</span>
+                </div>
+                <div class="w-8 h-px bg-border-light"></div>
+                <div class="flex items-center">
+                    <div class="w-8 h-8 bg-border-light text-text-secondary rounded-full flex items-center justify-center text-sm font-semibold">3</div>
+                    <span class="ml-2 text-sm text-text-secondary">Pagamento</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Cart Items -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-xl shadow-subtle p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-2xl font-bold text-primary">Seu Carrinho</h2>
+                            <span class="text-sm text-text-secondary">3 itens</span>
+                        </div>
+
+                        <!-- Cart Item 1 -->
+                        <div class="border-b border-border-light pb-6 mb-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=150&h=200&fit=crop" alt="Calça Skinny Premium" class="w-20 h-28 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <h3 class="font-semibold text-primary mb-1">Calça Skinny Premium</h3>
+                                            <p class="text-sm text-text-secondary mb-2">Cor: Azul Marinho | Tamanho: 38</p>
+                                            <div class="flex items-center mb-2">
+                                                <div class="flex items-center bg-success/10 px-2 py-1 rounded text-xs">
+                                                    <svg class="w-3 h-3 text-success mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                    </svg>
+                                                    <span class="text-success font-medium">95% Fit Garantido</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-text-secondary hover:text-error transition-colors">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-4">
+                                        <div class="flex items-center space-x-3">
+                                            <button class="w-8 h-8 rounded-full border border-border-light flex items-center justify-center hover:bg-surface transition-colors">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+                                                </svg>
+                                            </button>
+                                            <span class="font-semibold">1</span>
+                                            <button class="w-8 h-8 rounded-full border border-border-light flex items-center justify-center hover:bg-surface transition-colors">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-lg font-bold text-primary">R$ 189,90</p>
+                                            <p class="text-sm text-text-secondary line-through">R$ 229,90</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cart Item 2 -->
+                        <div class="border-b border-border-light pb-6 mb-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=150&h=200&fit=crop" alt="Calça Wide Leg Elegante" class="w-20 h-28 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <h3 class="font-semibold text-primary mb-1">Calça Wide Leg Elegante</h3>
+                                            <p class="text-sm text-text-secondary mb-2">Cor: Preto | Tamanho: 40</p>
+                                            <div class="flex items-center mb-2">
+                                                <div class="flex items-center bg-success/10 px-2 py-1 rounded text-xs">
+                                                    <svg class="w-3 h-3 text-success mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                    </svg>
+                                                    <span class="text-success font-medium">92% Fit Garantido</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-text-secondary hover:text-error transition-colors">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-4">
+                                        <div class="flex items-center space-x-3">
+                                            <button class="w-8 h-8 rounded-full border border-border-light flex items-center justify-center hover:bg-surface transition-colors">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+                                                </svg>
+                                            </button>
+                                            <span class="font-semibold">2</span>
+                                            <button class="w-8 h-8 rounded-full border border-border-light flex items-center justify-center hover:bg-surface transition-colors">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-lg font-bold text-primary">R$ 459,80</p>
+                                            <p class="text-sm text-text-secondary">R$ 229,90 cada</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cart Item 3 -->
+                        <div class="pb-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0">
+                                    <img src="https://images.pexels.com/photos/1598509/pexels-photo-1598509.jpeg?auto=compress&cs=tinysrgb&w=150&h=200&fit=crop" alt="Calça Reta Clássica" class="w-20 h-28 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <h3 class="font-semibold text-primary mb-1">Calça Reta Clássica</h3>
+                                            <p class="text-sm text-text-secondary mb-2">Cor: Bege | Tamanho: 36</p>
+                                            <div class="flex items-center mb-2">
+                                                <div class="flex items-center bg-success/10 px-2 py-1 rounded text-xs">
+                                                    <svg class="w-3 h-3 text-success mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                    </svg>
+                                                    <span class="text-success font-medium">98% Fit Garantido</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="text-text-secondary hover:text-error transition-colors">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-4">
+                                        <div class="flex items-center space-x-3">
+                                            <button class="w-8 h-8 rounded-full border border-border-light flex items-center justify-center hover:bg-surface transition-colors">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+                                                </svg>
+                                            </button>
+                                            <span class="font-semibold">1</span>
+                                            <button class="w-8 h-8 rounded-full border border-border-light flex items-center justify-center hover:bg-surface transition-colors">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-lg font-bold text-primary">R$ 159,90</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Styling Suggestions -->
+                        <div class="bg-accent/5 rounded-lg p-4 mt-6">
+                            <div class="flex items-start space-x-3">
+                                <div class="flex-shrink-0">
+                                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary mb-2">Sugestões de Styling</h4>
+                                    <p class="text-sm text-text-secondary mb-3">Complete seu look com estas peças que combinam perfeitamente:</p>
+                                    <div class="flex space-x-2">
+                                        <span class="bg-white px-3 py-1 rounded-full text-xs border border-border-light">Blazer Estruturado</span>
+                                        <span class="bg-white px-3 py-1 rounded-full text-xs border border-border-light">Camisa Social</span>
+                                        <span class="bg-white px-3 py-1 rounded-full text-xs border border-border-light">Sapato Oxford</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-xl shadow-subtle p-6 sticky top-24">
+                        <h3 class="text-xl font-bold text-primary mb-6">Resumo do Pedido</h3>
+                        
+                        <!-- Fit Guarantee Badge -->
+                        <div class="bg-success/10 border border-success/20 rounded-lg p-4 mb-6">
+                            <div class="flex items-center mb-2">
+                                <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="font-semibold text-success">Garantia de Fit</span>
+                            </div>
+                            <p class="text-sm text-success">95% de confiança no caimento. Não ficou perfeito? Trocamos grátis!</p>
+                        </div>
+
+                        <!-- Price Breakdown -->
+                        <div class="space-y-3 mb-6">
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Subtotal (4 itens)</span>
+                                <span class="font-semibold">R$ 809,60</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Desconto</span>
+                                <span class="font-semibold text-success">-R$ 40,00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Frete</span>
+                                <span class="font-semibold text-success">Grátis</span>
+                            </div>
+                            <div class="border-t border-border-light pt-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-lg font-bold text-primary">Total</span>
+                                    <span class="text-2xl font-bold text-primary">R$ 769,60</span>
+                                </div>
+                                <p class="text-sm text-text-secondary mt-1">ou 12x de R$ 64,13 sem juros</p>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Info -->
+                        <div class="bg-surface rounded-lg p-4 mb-6">
+                            <div class="flex items-center mb-2">
+                                <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                </svg>
+                                <span class="font-semibold text-primary">Entrega Grátis</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">CEP: 01310-100 - São Paulo, SP</p>
+                            <p class="text-sm text-text-secondary">Chegará em 2-3 dias úteis</p>
+                            <button class="text-sm text-accent hover:text-accent-600 transition-colors mt-1">Alterar CEP</button>
+                        </div>
+
+                        <!-- Coupon Code -->
+                        <div class="mb-6">
+                            <div class="flex space-x-2">
+                                <input type="text" placeholder="Código de desconto" class="input-field flex-1 text-sm py-2" />
+                                <button class="btn-secondary px-4 py-2 text-sm">Aplicar</button>
+                            </div>
+                        </div>
+
+                        <!-- Checkout Button -->
+                        <button id="checkoutBtn" class="btn-primary w-full text-lg py-4 mb-4">
+                            Finalizar Compra
+                        </button>
+
+                        <!-- Continue Shopping -->
+                        <a href="product_catalog.html" class="block text-center text-accent hover:text-accent-600 transition-colors text-sm">
+                            ← Continuar Comprando
+                        </a>
+
+                        <!-- Security Badges -->
+                        <div class="flex items-center justify-center space-x-4 mt-6 pt-6 border-t border-border-light">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-xs text-text-secondary">Compra Segura</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-xs text-text-secondary">SSL Certificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="fixed inset-0 bg-black/50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl max-w-4xl w-full max-h-screen overflow-y-auto">
+                <!-- Modal Header -->
+                <div class="flex items-center justify-between p-6 border-b border-border-light">
+                    <h2 class="text-2xl font-bold text-primary">Finalizar Compra</h2>
+                    <button id="closeModal" class="text-text-secondary hover:text-primary transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Modal Content -->
+                <div class="p-6">
+                    <!-- Step 2: Fit Review -->
+                    <div id="fitReviewStep" class="space-y-6">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold text-primary mb-2">Revisão de Fit</h3>
+                            <p class="text-text-secondary">Confirme os tamanhos antes de finalizar sua compra</p>
+                        </div>
+
+                        <!-- Fit Review Items -->
+                        <div class="space-y-4">
+                            <div class="bg-surface rounded-lg p-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=80&h=100&fit=crop" alt="Calça Skinny Premium" class="w-12 h-16 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                        <div>
+                                            <h4 class="font-semibold text-primary">Calça Skinny Premium</h4>
+                                            <p class="text-sm text-text-secondary">Tamanho: 38</p>
+                                            <div class="flex items-center mt-1">
+                                                <svg class="w-4 h-4 text-success mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-xs text-success">95% Fit Garantido</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="text-accent hover:text-accent-600 transition-colors text-sm font-medium">
+                                        Alterar Tamanho
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button class="btn-secondary">Voltar ao Carrinho</button>
+                            <button id="proceedToPayment" class="btn-primary">Prosseguir para Pagamento</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Payment -->
+                    <div id="paymentStep" class="space-y-6 hidden">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold text-primary mb-2">Pagamento e Entrega</h3>
+                            <p class="text-text-secondary">Escolha sua forma de pagamento preferida</p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <!-- Payment Methods -->
+                            <div>
+                                <h4 class="font-semibold text-primary mb-4">Forma de Pagamento</h4>
+                                
+                                <!-- PIX Payment -->
+                                <div class="border border-border-light rounded-lg p-4 mb-4 cursor-pointer hover:border-primary transition-colors">
+                                    <div class="flex items-center">
+                                        <input type="radio" name="payment" id="pix" class="mr-3" checked />
+                                        <label for="pix" class="flex items-center cursor-pointer flex-1">
+                                            <div class="w-8 h-8 bg-primary rounded mr-3 flex items-center justify-center">
+                                                <span class="text-white text-xs font-bold">PIX</span>
+                                            </div>
+                                            <div>
+                                                <p class="font-semibold">PIX</p>
+                                                <p class="text-sm text-text-secondary">Pagamento instantâneo</p>
+                                            </div>
+                                        </label>
+                                        <span class="text-sm font-semibold text-success">5% OFF</span>
+                                    </div>
+                                </div>
+
+                                <!-- Credit Card -->
+                                <div class="border border-border-light rounded-lg p-4 mb-4 cursor-pointer hover:border-primary transition-colors">
+                                    <div class="flex items-center">
+                                        <input type="radio" name="payment" id="credit" class="mr-3" />
+                                        <label for="credit" class="flex items-center cursor-pointer flex-1">
+                                            <div class="w-8 h-8 bg-accent rounded mr-3 flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p class="font-semibold">Cartão de Crédito</p>
+                                                <p class="text-sm text-text-secondary">Em até 12x sem juros</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Boleto -->
+                                <div class="border border-border-light rounded-lg p-4 mb-4 cursor-pointer hover:border-primary transition-colors">
+                                    <div class="flex items-center">
+                                        <input type="radio" name="payment" id="boleto" class="mr-3" />
+                                        <label for="boleto" class="flex items-center cursor-pointer flex-1">
+                                            <div class="w-8 h-8 bg-secondary-600 rounded mr-3 flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p class="font-semibold">Boleto Bancário</p>
+                                                <p class="text-sm text-text-secondary">Vencimento em 3 dias</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Delivery Address -->
+                            <div>
+                                <h4 class="font-semibold text-primary mb-4">Endereço de Entrega</h4>
+                                <div class="space-y-4">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <input type="text" placeholder="CEP" class="input-field" />
+                                        <button class="btn-secondary text-sm">Buscar CEP</button>
+                                    </div>
+                                    <input type="text" placeholder="Rua" class="input-field" />
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <input type="text" placeholder="Número" class="input-field" />
+                                        <input type="text" placeholder="Complemento" class="input-field" />
+                                    </div>
+                                    <input type="text" placeholder="Bairro" class="input-field" />
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <input type="text" placeholder="Cidade" class="input-field" />
+                                        <select class="input-field">
+                                            <option>SP</option>
+                                            <option>RJ</option>
+                                            <option>MG</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Shipping Options -->
+                                <div class="mt-6">
+                                    <h5 class="font-semibold text-primary mb-3">Opções de Entrega</h5>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between p-3 border border-border-light rounded-lg">
+                                            <div class="flex items-center">
+                                                <input type="radio" name="shipping" id="standard" class="mr-3" checked />
+                                                <label for="standard" class="cursor-pointer">
+                                                    <p class="font-medium">Entrega Padrão</p>
+                                                    <p class="text-sm text-text-secondary">5-7 dias úteis</p>
+                                                </label>
+                                            </div>
+                                            <span class="font-semibold text-success">Grátis</span>
+                                        </div>
+                                        <div class="flex items-center justify-between p-3 border border-border-light rounded-lg">
+                                            <div class="flex items-center">
+                                                <input type="radio" name="shipping" id="express" class="mr-3" />
+                                                <label for="express" class="cursor-pointer">
+                                                    <p class="font-medium">Entrega Expressa</p>
+                                                    <p class="text-sm text-text-secondary">2-3 dias úteis</p>
+                                                </label>
+                                            </div>
+                                            <span class="font-semibold">R$ 19,90</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Summary in Modal -->
+                        <div class="bg-surface rounded-lg p-6">
+                            <h4 class="font-semibold text-primary mb-4">Resumo Final</h4>
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span>Subtotal</span>
+                                    <span>R$ 809,60</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Desconto PIX (5%)</span>
+                                    <span class="text-success">-R$ 40,48</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Frete</span>
+                                    <span class="text-success">Grátis</span>
+                                </div>
+                                <div class="border-t border-border-light pt-2 mt-2">
+                                    <div class="flex justify-between font-bold text-lg">
+                                        <span>Total</span>
+                                        <span class="text-primary">R$ 769,12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Final Checkout Button -->
+                        <div class="flex justify-between">
+                            <button id="backToFitReview" class="btn-secondary">Voltar</button>
+                            <button class="btn-primary px-8">Confirmar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M8 4h16c2.2 0 4 1.8 4 4v16c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4V8c0-2.2 1.8-4 4-4zm2 6v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2zm4 0v12h2V10h-2z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">PantaStyle</span>
+                    </div>
+                    <p class="text-white/80 mb-4">Sua personalidade de calça te espera. Especialistas em fit perfeito desde 2015.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-white/80 hover:text-accent transition-colors">Início</a></li>
+                        <li><a href="fit_finder_tool.html" class="text-white/80 hover:text-accent transition-colors">Encontre Seu Fit</a></li>
+                        <li><a href="product_catalog.html" class="text-white/80 hover:text-accent transition-colors">Catálogo</a></li>
+                        <li><a href="size_guide_fit_education.html" class="text-white/80 hover:text-accent transition-colors">Guia de Tamanhos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-4">Suporte</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Central de Ajuda</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Trocas e Devoluções</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Fale Conosco</a></li>
+                        <li><a href="javascript:void(0)" class="text-white/80 hover:text-accent transition-colors">Garantia de Fit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li>contato@pantastyle.com.br</li>
+                        <li>(11) 9999-9999</li>
+                        <li>Seg-Sex: 9h às 18h</li>
+                        <li>Sáb: 9h às 14h</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
+                <p>&copy; 2025 PantaStyle. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Modal functionality
+        const checkoutBtn = document.getElementById('checkoutBtn');
+        const checkoutModal = document.getElementById('checkoutModal');
+        const closeModal = document.getElementById('closeModal');
+        const fitReviewStep = document.getElementById('fitReviewStep');
+        const paymentStep = document.getElementById('paymentStep');
+        const proceedToPayment = document.getElementById('proceedToPayment');
+        const backToFitReview = document.getElementById('backToFitReview');
+
+        // Open modal
+        checkoutBtn.addEventListener('click', function() {
+            checkoutModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close modal
+        closeModal.addEventListener('click', function() {
+            checkoutModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal on backdrop click
+        checkoutModal.addEventListener('click', function(e) {
+            if (e.target === checkoutModal) {
+                checkoutModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Proceed to payment step
+        proceedToPayment.addEventListener('click', function() {
+            fitReviewStep.classList.add('hidden');
+            paymentStep.classList.remove('hidden');
+            
+            // Update progress indicator
+            const progressSteps = document.querySelectorAll('.flex.items-center.justify-center.space-x-4 .flex.items-center');
+            progressSteps[1].querySelector('.w-8.h-8').classList.remove('bg-border-light', 'text-text-secondary');
+            progressSteps[1].querySelector('.w-8.h-8').classList.add('bg-primary', 'text-white');
+            progressSteps[1].querySelector('span').classList.remove('text-text-secondary');
+            progressSteps[1].querySelector('span').classList.add('text-primary', 'font-medium');
+        });
+
+        // Back to fit review
+        backToFitReview.addEventListener('click', function() {
+            paymentStep.classList.add('hidden');
+            fitReviewStep.classList.remove('hidden');
+        });
+
+        // Payment method selection
+        const paymentRadios = document.querySelectorAll('input[name="payment"]');
+        paymentRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                // Remove active state from all payment options
+                document.querySelectorAll('input[name="payment"]').forEach(r => {
+                    r.closest('.border').classList.remove('border-primary', 'bg-primary/5');
+                    r.closest('.border').classList.add('border-border-light');
+                });
+                
+                // Add active state to selected option
+                if (this.checked) {
+                    this.closest('.border').classList.remove('border-border-light');
+                    this.closest('.border').classList.add('border-primary', 'bg-primary/5');
+                }
+
+                // Update total based on PIX discount
+                const totalElement = document.querySelector('#paymentStep .text-primary');
+                if (this.id === 'pix') {
+                    totalElement.textContent = 'R$ 731,12';
+                } else {
+                    totalElement.textContent = 'R$ 769,60';
+                }
+            });
+        });
+
+        // Quantity controls
+        document.querySelectorAll('.w-8.h-8.rounded-full.border').forEach(button => {
+            button.addEventListener('click', function() {
+                const isIncrement = this.querySelector('path[d*="M12 6v6m0 0v6m0-6h6m-6 0H6"]');
+                const quantitySpan = isIncrement ? 
+                    this.previousElementSibling : 
+                    this.nextElementSibling;
+                
+                let quantity = parseInt(quantitySpan.textContent);
+                
+                if (isIncrement) {
+                    quantity++;
+                } else if (quantity > 1) {
+                    quantity--;
+                }
+                
+                quantitySpan.textContent = quantity;
+                
+                // Update totals (simplified calculation)
+                updateCartTotals();
+            });
+        });
+
+        // Update cart totals
+        function updateCartTotals() {
+            // This would typically calculate based on actual quantities and prices
+            // For demo purposes, keeping static values
+            console.log('Cart totals updated');
+        }
+
+        // CEP lookup simulation
+        document.querySelector('button:contains("Buscar CEP")').addEventListener('click', function() {
+            const cepInput = this.previousElementSibling;
+            if (cepInput.value) {
+                // Simulate CEP lookup
+                setTimeout(() => {
+                    document.querySelector('input[placeholder="Rua"]').value = 'Rua Augusta';
+                    document.querySelector('input[placeholder="Bairro"]').value = 'Consolação';
+                    document.querySelector('input[placeholder="Cidade"]').value = 'São Paulo';
+                }, 500);
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                console.log('Mobile menu clicked');
+            });
+        }
+    </script>
+</body>
+</html>

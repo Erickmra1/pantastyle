@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1B365D; /* Deep navy for trust and expertise */
+  --color-primary-50: #F0F4F8; /* Very light navy tint */
+  --color-primary-100: #D6E4F0; /* Light navy tint */
+  --color-primary-200: #B8CCE0; /* Medium light navy */
+  --color-primary-300: #9BB4D0; /* Medium navy */
+  --color-primary-400: #7E9CC0; /* Medium dark navy */
+  --color-primary-500: #4A6FA5; /* Standard navy */
+  --color-primary-600: #2E4F7A; /* Dark navy */
+  --color-primary-700: #1B365D; /* Primary deep navy */
+  --color-primary-800: #152B4A; /* Darker navy */
+  --color-primary-900: #0F1F37; /* Darkest navy */
+
+  /* Secondary Colors */
+  --color-secondary: #F8F9FA; /* Clean canvas */
+  --color-secondary-50: #FFFFFF; /* Pure white */
+  --color-secondary-100: #F8F9FA; /* Clean canvas */
+  --color-secondary-200: #E9ECEF; /* Light gray */
+  --color-secondary-300: #DEE2E6; /* Medium light gray */
+  --color-secondary-400: #CED4DA; /* Medium gray */
+  --color-secondary-500: #ADB5BD; /* Standard gray */
+  --color-secondary-600: #6C757D; /* Dark gray */
+  --color-secondary-700: #495057; /* Darker gray */
+  --color-secondary-800: #343A40; /* Very dark gray */
+  --color-secondary-900: #212529; /* Darkest gray */
+
+  /* Accent Colors */
+  --color-accent: #D4A574; /* Warm gold for premium moments */
+  --color-accent-50: #FDF8F3; /* Very light gold tint */
+  --color-accent-100: #F9EFDF; /* Light gold tint */
+  --color-accent-200: #F3DFBF; /* Medium light gold */
+  --color-accent-300: #EDCF9F; /* Medium gold */
+  --color-accent-400: #E7BF7F; /* Medium dark gold */
+  --color-accent-500: #D4A574; /* Primary warm gold */
+  --color-accent-600: #C1945F; /* Dark gold */
+  --color-accent-700: #A67D4A; /* Darker gold */
+  --color-accent-800: #8B6635; /* Very dark gold */
+  --color-accent-900: #704F20; /* Darkest gold */
+
+  /* Background Colors */
+  --color-background: #FFFFFF; /* Pure clarity for product focus */
+  --color-surface: #F1F3F4; /* Subtle depth for content organization */
+
+  /* Text Colors */
+  --color-text-primary: #2D3748; /* Strong readability */
+  --color-text-secondary: #718096; /* Clear hierarchy */
+
+  /* Status Colors */
+  --color-success: #38A169; /* Positive fit confirmations - green-600 */
+  --color-success-50: #F0FFF4; /* Very light green */
+  --color-success-100: #C6F6D5; /* Light green */
+  --color-success-500: #48BB78; /* Medium green */
+  --color-success-600: #38A169; /* Primary success green */
+  --color-success-700: #2F855A; /* Dark green */
+
+  --color-warning: #D69E2E; /* Size alerts - yellow-600 */
+  --color-warning-50: #FFFBEB; /* Very light yellow */
+  --color-warning-100: #FEF5E7; /* Light yellow */
+  --color-warning-500: #ED8936; /* Medium yellow */
+  --color-warning-600: #D69E2E; /* Primary warning yellow */
+  --color-warning-700: #B7791F; /* Dark yellow */
+
+  --color-error: #E53E3E; /* Helpful guidance - red-600 */
+  --color-error-50: #FED7D7; /* Very light red */
+  --color-error-100: #FEB2B2; /* Light red */
+  --color-error-500: #F56565; /* Medium red */
+  --color-error-600: #E53E3E; /* Primary error red */
+  --color-error-700: #C53030; /* Dark red */
+
+  /* Border Colors */
+  --color-border-light: #E2E8F0; /* Light gray borders - gray-300 */
+  --color-border-medium: #CBD5E0; /* Medium gray borders - gray-400 */
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .font-accent {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out hover:bg-primary-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary border border-border-light text-text-primary px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out hover:bg-surface focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white border border-border-light rounded-lg p-6 transition-all duration-300 ease-in-out;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg hover:border-primary-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-border-light rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 ease-in-out;
+  }
+
+  .shadow-subtle {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
